@@ -1,0 +1,38 @@
+body {
+    background-color: #1a1a3b; /* Dark background */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    border: 2px solid red;
+    padding: 10px; /* Added padding to the container */
+    width: 400px; /* Set width for demonstration */
+    margin: auto; /* Center the container */
+}
+
+.fname {
+    border: 2px solid green;
+    padding: 5px;
+    margin-bottom: 10px; /* Space between .fname and .headshot */
+}
+
+.headshot {
+    border: 2px solid blue;
+    height: 150px; /* Example height */
+    margin-bottom: 10px; /* Space between .headshot and .info-row */
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Space between boxes */
+}
+
+.teamname, .nameacro, .drivernum {
+    border: 2px solid pink;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #e57373; /* Light red color for visibility */
+}
