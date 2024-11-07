@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Example</title>
-    <link rel="stylesheet" href="ohhh.css">
+    <!-- Keeping filename as it is just for fun --><link rel="stylesheet" href="ohhh.css"> 
 </head>
 <body>
     <div class="container">
@@ -17,26 +17,6 @@
         </div>
     </div>
 
-    <script>
-        // Function to fetch data from the Python server
-        async function fetchData() {
-            try {
-                const response = await fetch('http://127.0.0.1:5000/get_data');
-                const data = await response.json();
-
-                // Populate the containers with the fetched data
-                document.getElementById('fname').textContent = data.fname;
-                document.getElementById('headshot').textContent = data.headshot; // Replace with an <img> tag for actual image
-                document.getElementById('teamname').textContent = data.teamname;
-                document.getElementById('nameacro').textContent = data.nameacro;
-                document.getElementById('drivernum').textContent = data.drivernum;
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        }
-
-        // Call the fetch function when the page loads
-        window.onload = fetchData;
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
